@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/js/css/lb.css"> <!-- Lightbox CSS for image gallery -->
+    <title>My Travel Blog - Destination Name</title>
+    <style>
+        /* Basic styling for layout */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        
+        .main-content {
+            flex: 3;
+        }
+        
+        aside.about-me {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        aside.about-me h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        aside.about-me p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="greece">
+    <header>
+        <a href="index.html">
+            <h2>Return to Home Page</h2>
+        </a>
+        <h1>Santorini, Greece 🇬🇷</h1>
+        <section class="summary">
+            <img src="/images/post-images/greece4.jpg" alt="Description of Image 3">
+            <p>
+                London is one of my favorite cities. This summer marked the third time I visited, but it never loses its charm. The rich history, diverse cuisine, and overall allure captivate me, and I was thrilled to be back. This page features my experiences at the following:
+            </p>
+            <ul>
+                <li><a href="#sister">First Stop, Athens!</a></li> 
+                <li><a href="#view">Santorini</a></li>
+                <li><a href="#cooking">Cooking Class</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <div class="container">
+    
+        <!-- Main Content -->
+                   <div class="post" id="sister">
+                    <a href="/images/post-images/greece1.jpg" data-lightbox="post" data-title="Image 3 description">
+                        <img src="/images/post-images/greece1.jpg" alt="Description of Image 3">
+                    </a>
+                    <p class="caption">I arrived in London early in the morning, eager to visit one of my closest high school friends, Marina. She had been studying abroad at the London School of Economics over the summer, and since I’d spent much of my own summer away, I hadn’t had many chances to reconnect with friends from home. It was wonderful to finally catch up and spend time together. And what better way to do it than over afternoon tea? We spent the day sipping tea and chatting, sharing stories of our recent experiences. It was a perfect day in every way.</p>
+                </div>
+
+                <div class="post" id ="view">
+                    <a href="/images/post-images/greece2.jpg" data-lightbox="gallery" data-title="Image 2 description">
+                        <img src="/images/post-images/greece2.jpg" alt="Description of Image 2">
+                    </a>
+                    <p class="caption">I arrived in London early in the morning, eager to visit one of my closest high school friends, Marina. She had been studying abroad at the London School of Economics over the summer, and since I’d spent much of my own summer away, I hadn’t had many chances to reconnect with friends from home. </p>
+                </div>
+
+                <!-- Additional Images for Memories with My Mom -->
+                <div class="post" id="cooking">
+                    <a href="/images/post-images/greece3.jpg" data-lightbox="gallery" data-title="Image 5 description">
+                        <img src="/images/post-images/greece3.jpg" alt="Description of Image 5">
+                    </a>
+                    <p class="caption">Image 4 description - a serene moment by [Natural Feature or Park]</p>
+                </div>
+                
+    </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cate Madden's Travel Adventures</p>
+    </footer>
+
+
+    <script src="/js/lb.js"></script>
+
+</body>
+</html>
