@@ -1,4 +1,3 @@
-<!-- add some kind of cute signature at the bottom on each of them -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,82 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/lb.css">
+    <link rel="stylesheet" href="../js/css/lb.css"> <!-- Lightbox CSS for image gallery -->
     <title>My Travel Blog - Destination Name</title>
-    
-</head>
-<a href="index.html">
-    <h2>Return to Home Page</h2>
-    <img src="https://photos.fife.usercontent.google.com/pw/AP1GczO0MuU_3BqZ90ALJS5RUuaz4hkFRywKBYQC_DW05YDLP3lD-t4cJ1hO=w1084-h1450-s-no-gm?authuser=0" alt="">
-</a>
-
-<body class ="spain">
-    <div class="page">
-   
-    <header>
-        <h1>Barcelona, Spain</h1>
-       
-
-    <!-- Summary Section -->
-    <section class="summary">
-        <h2>Trip Summary</h2>
-        <p>
-            Destination Name offered an unforgettable mix of history, culture, and adventure. From iconic landmarks to hidden gems, every moment was filled with excitement and new discoveries. Here’s a quick summary of my time here:
-        </p>
-        <ul>
-            <li>Visited major landmarks like [Landmark 1] and [Landmark 2].</li>
-            <li>Experienced local cuisine, including dishes like [Dish 1] and [Dish 2].</li>
-            <li>Enjoyed breathtaking views from [Viewpoint/Location Name].</li>
-        </ul>
-    </section>
-
-    <!-- Image Gallery Section -->
-    <section class="gallery">
-        <h2>Photo Gallery</h2>
+    <style>
+        /* Basic styling for layout */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
         
-        <!-- Image 1 -->
-        <div class="gallery-item">
-            <a href="https://photos.google.com/photo/AF1QipOLw0quLYF-KpcAA-rLPnMX1-dVJQZwZEhFHLge" data-lightbox="gallery" data-title="Image 1 description">
-                <img src="https://photos.google.com/photo/AF1QipOLw0quLYF-KpcAA-rLPnMX1-dVJQZwZEhFHLge" alt="Description of Image 1">
-            </a>
-            <p class="caption">Image 1 description - a memorable moment at [Location or Landmark]</p>
-            <section id="sig">
-                <img src="../images/IMG_0217.jpg" alt="Signature">
-                </section>
-        </div>
+        .main-content {
+            flex: 3;
+        }
+        
+        
+    </style>
+</head>
+<body class="spain">
+    <header>
+        <a href="index.html">
+            <h2>Return to Home Page</h2>
+        </a>
+        <h1>Barcelona, Spain 🇪🇸</h1>
+        <section class="summary">
+            <img src="../images/post-images/barcelona.jpg" alt="Description of Image 3">
+            <p>
+                When deciding which city to study abroad in, I was truly conflicted. I’ve absolutely adored every European city I’ve traveled to, but after hearing stories from my older brother about his experience studying abroad in Barcelona, it quickly became clear that it was where I wanted to go. The rich culture, combined with an incredible city layout where the heart of the city is just a 20-minute walk from the beach, made it the perfect location. It didn’t take long for Barcelona to become a very special place to me.
+            </p>
+            <ul>
+                <li><a href="#tea">Tea Time</a></li> 
+                <li><a href="#dinner">Dinner with the Saads</a></li>
+                <li><a href="#mom">Memories with My Mom</a></li>
+        
+            </ul>
+        </section>
+    </header>
 
-        <!-- Image 2 -->
-        <div class="gallery-item">
-            <a href="../images/image2.jpg" data-lightbox="gallery" data-title="Image 2 description">
-                <img src="../images/image2.jpg" alt="Description of Image 2">
-            </a>
-            <p class="caption">Image 2 description - capturing the vibrant streets of [Neighborhood or Area]</p>
-            <section id="sig">
-                <img src="../images/IMG_0217.jpg" alt="Signature">
-                </section>
-        </div>
+    <div class="container">
+    
+        <!-- Main Content -->
+              <div class="post" id="tea">
+                    <a href="../images/post-images/barcelona1.jpg" data-lightbox="post" data-title="Image 3 description">
+                        <img src="../images/post-images/barcelona1.jpg" alt="Description of Image 3">
+                    </a>
+                    <p class="caption">I’ll admit, studying wasn’t exactly the most exciting part of studying abroad. However, I ended up taking two absolutely fascinating classes. The first was a course on the history and politics of Spain. History had always been one of my favorite subjects growing up, but it wasn’t something I could pursue in college since it didn’t align with my major. So, it was incredibly enjoyable to dive back into learning history—especially the rich and complex history of Spanish politics.
 
-        <!-- Image 3 -->
-        <div class="gallery-item">
-            <a href="../images/image3.jpg" data-lightbox="gallery" data-title="Image 3 description">
-                <img src="../images/image3.jpg" alt="Description of Image 3">
-            </a>
-            <p class="caption">Image 3 description - a serene moment by [Natural Feature or Park]</p>
-            <section id="sig">
-                <img src="../images/IMG_0217.jpg" alt="Signature">
-                </section>
-        </div>
+                        What made this class particularly special was how it blended traditional learning with exploration. Much of the course involved wandering around various places in Barcelona, observing and learning about the historical significance of even the most seemingly random spots. This picture, for example, is of a very famous building designed by the renowned architect Antoni Gaudí, who later went on to construct the Sagrada Familia. This structure was created for a prominent Spanish family and showcases Gaudí’s close ties with the Spanish royal family.
+                        
+                        It was so fascinating to immerse myself in Barcelona’s history through this class and experience the city in such a meaningful way!</p>
+                    <section id="sig">
+                        <img src="../images/IMG_0217.jpg" alt="Signature">
+                        </section>
+                </div>
 
-        <!-- Add more images as needed in the same format -->
+                <div class="post" id ="dinner">
+                    <a href="../images/post-images/barcelona2.jpg" data-lightbox="gallery" data-title="Image 2 description">
+                        <img src="../images/post-images/barcelona2.jpg" alt="Description of Image 2">
+                    </a>
+                    <p class="caption">I went on this adventure with one of my closest friends, Maddie, who is pictured here, thoughtfully observing our somewhat subpar efforts in a tapas cooking class. Maddie is one of the kindest, most selfless, and well-grounded people I know. I was incredibly nervous about embarking on this journey, but having Maddie by my side eased so many of those anxieties. She was my go-to activity and travel buddy throughout the trip, and I couldn’t have chosen a better person to share these experiences with! </p>
+                    <section id="sig">
+                        <img src="../images/IMG_0217.jpg" alt="Signature">
+                        </section>
+                </div>
+
+                <!-- Additional Images for Memories with My Mom -->
+                <div class="post" id="mom">
+                    <a href="../images/post-images/barcelona3.jpg" data-lightbox="gallery" data-title="Image 5 description">
+                        <img src="../images/post-images/barcelona3.jpg" alt="Description of Image 5">
+                    </a>
+                    <p class="caption">
+                        One of the things I always look forward to when traveling is the food. Trying new cuisines feels like one of life’s true luxuries, and I always make it a point to fully embrace the culinary experiences of wherever I am. Barcelona’s tapas-style meals were a unique experience; while they took some getting used to, I quickly became a fan. The format allowed me to expand my palate and try as many new dishes as possible.
+                        That said, my favorite culinary aspect of Barcelona wasn’t the restaurants—it was the grocery stores. They were stocked with high-quality meats and cheeses at a fraction of the price you’d pay in America. I especially loved making my own lunches, like this Sorrento ham and burrata salad I ate almost weekly. Enjoying those meals on my “princess” balcony, while people-watching below, became one of my favorite rituals.</p>
+                    <img src="../images/IMG_0217.jpg" alt="Signature">
+                    </section>
+
+                </div>
+                <div class="post" id="mom">
+                    <a href="../images/post-images/barcelona4.jpg" data-lightbox="gallery" data-title="Image 5 description">
+                        <img src="../images/post-images/barcelona4.jpg" alt="Description of Image 5">
+                    </a>
+                    <p class="caption">
+                        One of the things I love most about breaks, especially summer breaks, is being able to run again. Once it gets cold here at Michigan, it feels like it never really warms up. By April, I’m itching to get outside and run. Though the heat in Barcelona was sometimes a bit much, it was such a fun city to run in. Exploring the city on foot was a fantastic way to take in all it had to offer.
+
+                        Maddie was also training for her half marathon, so we had fun staying active together. One of our most memorable adventures was hiking Mount Tibidabo. It was a long and challenging hike, and we were very confused when we reached the top to find that no one else seemed even remotely as red or sweaty as we were. Later, we discovered that there was a shuttle most people had taken! Despite this, the effort was completely worth it for the stunning view of the city.</p>
+                    <section id="sig">
+                    <img src="../images/IMG_0217.jpg" alt="Signature">
+                    </section>
+
+                </div>
+    </div>
     </section>
-</div>
 
     <footer>
-        <p>&copy; 2024 Cate Madden's Travel Adventures</p>
+        <p>&copy; 2024 Catherine Madden's Travel Adventures</p>
         <img src="../images/IMG_0217.jpg" alt="Signature">
     </footer>
 
-    <!-- Lightbox JavaScript for the gallery functionality -->
-    <!-- <script src="../js/lb.js"></script> -->
+
+    <script src="/js/lb.js"></script>
+
 </body>
 </html>
