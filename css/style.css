@@ -6,6 +6,7 @@
 }
 
 body {
+background-color: white;
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
@@ -47,7 +48,7 @@ header img {
 }
 
 header p {
-    font-size: 1.1em;
+    font-size: 18px;
     margin: 15px;
 }
 
@@ -58,6 +59,8 @@ header p {
     gap: 20px; /* Add space between posts */
     margin: 20px auto;
     padding: 40px;
+    -webkit-mask: var(--mask);
+        mask: var(--mask);
     
 }
 
@@ -71,22 +74,33 @@ header p {
 
 /* Post Card Styles */
 .post {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: white;
     padding: 20px;
 
+    background: 
+    linear-gradient(lightblue 0 0) 50%/calc(100% - 25px) calc(100% - 25px) no-repeat,
+    radial-gradient(farthest-side, lightblue 98%, white) 0 0/25px 25px round;
 }
 
+
 .post .caption{
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .post:hover,.post:focus {
-    background-color: aliceblue;
+    transform: scale(1.05); /* Adds slight enlargement */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
+
+}
+.post #sig img{
+    width: 250px;
 }
 
+.post img{
+    width: 300px;
+}
 
 /* Summary Section */
 .summary {
@@ -99,7 +113,7 @@ header p {
 }
 
 .summary p, .summary ul {
-    font-size: 1em;
+    font-size: 15px;
     color: black;
     text-align: center;
     margin-bottom: 15px;
@@ -115,10 +129,19 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color: navy;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
 }
+
+footer img {
+    width: 300px;
+}
+
 
 /* Lightbox Styling */
 [data-lightbox="gallery"] {
@@ -132,10 +155,6 @@ a{
 }
 
 
-.london, .greece, .spain{
-    background-color: lightblue;
-}
-
 #gallery img{
     padding: 5px;
     border-radius: 10px;
@@ -147,3 +166,182 @@ a{
     grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
 }
 
+.london, .greece, .spain{
+    background-color: lightblue
+}
+
+.london .post, .greece .post, .spain .post{
+background-color: white;
+    padding: 20px;
+
+    background: 
+    linear-gradient(white 0 0) 50%/calc(100% - 25px) calc(100% - 25px) no-repeat,
+    radial-gradient(farthest-side, white 98%, lightblue) 0 0/25px 25px round;
+}
+
+
+.home h2{
+    padding: 30px;
+    font-size: 23px;
+}
+
+/* Responsive Styling for Different Screen Sizes */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    .container {
+        flex-direction: row; /* Switch to row layout */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .container img {
+        max-width: 400px;
+    }
+
+    .summary {
+        max-width: 600px; /* Wider for medium screens */
+        font-size: 1em; /* Slightly larger text */
+    }
+
+    footer img {
+        width: 250px;
+    }
+
+    .post #sig img{
+        width: 1.2em
+    }
+   
+ 
+}
+
+/* Large screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    .container img {
+        max-width: 500px;
+    }
+
+    
+
+    .post .caption{
+        font-size: 1.3em;
+    }
+
+    .summary {
+        max-width: 700px; /* Wider for large screens */
+        font-size: 1.1em; /* Larger text size */
+    }
+
+    footer {
+        font-size: 1em; /* Larger footer text */
+    }
+
+    footer img {
+        width: 300px;
+    }
+    
+    .post #sig img{
+        width: 1.4em
+    }
+
+    
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: lightslategray; /* Dark background */
+        color: #e0e0e0; /* Light text color */
+    }
+    .london, .greece, .spain{
+        background-color: lightslategray;
+    }
+h1, h2{
+    color: white;
+}
+p{
+    color: white
+}
+    header a {
+        color: black; /* Lighter link color */
+    }
+    a:hover a:focus{
+        color: blue
+    }
+
+    .post {
+        background-color: #1e1e1e; /* Darker card background */
+        color: #e0e0e0; /* Lighter text */
+      
+    }
+
+    .post:hover, .post:focus {
+        background-color: #2c2c2c; /* Slightly lighter on hover */
+    }
+
+    .summary {
+        background-color: lightgray;
+        color: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    }
+
+    footer {
+        background-color: #cdcdcd;
+        color: black;
+    }
+
+
+    a:hover, a:focus {
+        color: darkblue; /* Slightly brighter on hover */
+    }
+
+     footer img {
+        filter: brightness(0.8); /* Dim images slightly */
+    }
+
+    .post .caption{
+        color: black;
+    }
+.post #sig{
+    filter: brightness(0.8);
+}
+
+.london .post, .greece .post, .spain .post{
+        padding: 20px;
+        background-color: #cdcdcd;
+        background: 
+        linear-gradient(#cdcdcd 0 0) 50%/calc(100% - 25px) calc(100% - 25px) no-repeat,
+        radial-gradient(farthest-side, #cdcdcd 98%, lightslategray) 0 0/25px 25px round;
+        
+        
+    }
+
+    .post {
+        background-color: white;
+        padding: 20px;
+        color: black;
+        background: 
+        linear-gradient(#cdcdcd 0 0) 50%/calc(100% - 25px) calc(100% - 25px) no-repeat,
+        radial-gradient(farthest-side, #cdcdcd 98%, lightslategray) 0 0/25px 25px round;
+    }
+
+    .post .caption{
+        color: black;
+    }
+    
+}
