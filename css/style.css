@@ -1,0 +1,149 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 300px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10%;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 15px;
+}
+
+.container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping if there are too many items */
+    justify-content: space-evenly; /* Evenly distribute space between posts */
+    gap: 20px; /* Add space between posts */
+    margin: 20px auto;
+    padding: 40px;
+    
+}
+
+.container img{
+    width: 400px;
+    float: left;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/* Post Card Styles */
+.post {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+}
+
+.post .caption{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.post:hover,.post:focus {
+    background-color: aliceblue;
+}
+
+
+/* Summary Section */
+.summary {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.summary p, .summary ul {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.summary ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes left padding */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Lightbox Styling */
+[data-lightbox="gallery"] {
+    cursor: zoom-in;
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+
+.london, .greece, .spain{
+    background-color: lightblue;
+}
+
+#gallery img{
+    padding: 5px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+}
+
