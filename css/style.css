@@ -48,8 +48,10 @@ header img {
 }
 
 header p {
-    font-size: 18px;
+    font-size: 20px;
     margin: 15px;
+    font-weight: bold;
+    
 }
 
 .container {
@@ -259,6 +261,7 @@ background-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
+
     body {
         background-color: lightslategray; /* Dark background */
         color: #e0e0e0; /* Light text color */
@@ -266,9 +269,15 @@ background-color: white;
     .london, .greece, .spain{
         background-color: lightslategray;
     }
-h1, h2{
+h1{
     color: white;
 }
+h2{
+    color: black
+}
+
+
+
 p{
     color: white
 }
@@ -299,7 +308,9 @@ p{
         background-color: #cdcdcd;
         color: black;
     }
-
+footer p {
+    color: black;
+}
 
     a:hover, a:focus {
         color: darkblue; /* Slightly brighter on hover */
