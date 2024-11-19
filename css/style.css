@@ -29,7 +29,6 @@ h1 {
 
 h2 {
     font-size: 15px;
-    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -183,8 +182,9 @@ background-color: white;
 
 
 .home h2{
-    padding: 30px;
+
     font-size: 23px;
+    color: midnightblue;
 }
 
 /* Responsive Styling for Different Screen Sizes */
