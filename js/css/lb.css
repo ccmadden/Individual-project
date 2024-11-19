@@ -1,3 +1,5 @@
+/* lightbox.css */
+
 .lightbox-overlay {
     position: fixed;
     top: 0;
@@ -8,46 +10,58 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Center elements vertically */
     z-index: 1000;
 }
 
-.lightbox-image {
-    max-width: 80%;
+.lightbox-overlay img {
+    max-width: 90%;
     max-height: 80%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Style the caption to be larger and centered */
 .lightbox-caption {
     color: #fff;
+    font-style: bold;
+    font-size: 20px; /* Increase font size */
+    margin-top: 10px; /* Add space between image and caption */
     text-align: center;
-    margin-top: 10px;
+    max-width: 90%;
 }
 
+/* Close button styling */
 .lightbox-close {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 50px;
     color: #fff;
+  
     cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
 }
-
 .lightbox-next,
 .lightbox-back {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 50px; /* Adjust width as necessary */
+    height: 50px; /* Adjust height as necessary */
+    cursor: pointer;
+}
+.lightbox-next:hover, .lightbox-back:hover, .lightbox-next:focus, .lightbox-back:hover{
+border: 2px blue;
+
 }
 
+
 .lightbox-next {
-    right: 20px;
+    right: 5%; /* Position to the right of the image */
 }
 
 .lightbox-back {
-    left: 20px;
+    left: 5%; /* Position to the left of the image */
 }
